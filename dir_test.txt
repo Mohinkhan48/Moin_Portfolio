@@ -1,0 +1,27 @@
+ Volume in drive C has no label.
+ Volume Serial Number is FCF8-25F7
+
+ Directory of c:\Users\User\OneDrive\Documents\Projects\Portfolio
+
+03/08/2026  06:23 PM    <DIR>          .
+03/08/2026  12:35 PM    <DIR>          ..
+03/08/2026  03:12 PM               531 .env
+03/08/2026  03:12 PM             1,057 .eslintrc.json
+03/08/2026  03:12 PM               461 .gitignore
+03/08/2026  02:24 PM    <DIR>          .next
+03/08/2026  03:12 PM                53 .prettierignore
+03/08/2026  03:12 PM               157 .prettierrc
+03/08/2026  06:23 PM                 0 dir_test.txt
+03/08/2026  03:12 PM               411 image-hosts.config.js
+03/08/2026  03:11 PM               211 next-env.d.ts
+03/08/2026  03:11 PM               739 next.config.mjs
+03/08/2026  03:11 PM           310,832 package-lock.json
+03/08/2026  03:11 PM             2,055 package.json
+03/08/2026  03:10 PM                81 postcss.config.js
+03/08/2026  01:11 PM    <DIR>          public
+03/08/2026  12:40 PM               262 README.md
+03/08/2026  12:48 PM    <DIR>          src
+03/08/2026  03:10 PM             1,893 tailwind.config.js
+03/08/2026  12:40 PM               828 tsconfig.json
+              15 File(s)        319,571 bytes
+               5 Dir(s)  80,782,741,504 bytes free
