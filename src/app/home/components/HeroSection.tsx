@@ -80,7 +80,7 @@ export default function HeroSection() {
     }
 
     return (
-        <section className="relative z-10 h-auto flex flex-col justify-center pt-24 pb-10 lg:pb-12 px-6 overflow-hidden bg-terminal-bg">
+        <section className="relative z-10 h-auto flex flex-col justify-center pt-12 pb-4 lg:pb-6 px-6 overflow-hidden bg-terminal-bg">
             {/* ── Background depth layers ── */}
             {/* Layer 1: animated gradient blob */}
             <div
@@ -110,7 +110,28 @@ export default function HeroSection() {
             <div className="max-w-[1400px] mx-auto w-full grid lg:grid-cols-12 gap-12 items-start">
 
                 {/* Left: Identity + headline */}
-                <div className="lg:col-span-7">
+                <div className="lg:col-span-7 lg:pt-12">
+                    {/* FOXHUNT Company Card (Moved to Left) */}
+                    <div className="terminal-panel border border-terminal-border p-8 mb-12 glow-border-hover group transition-all duration-300 relative overflow-hidden max-w-lg">
+                        <div className="flex items-center gap-3 mb-4">
+                            <span className="w-2 h-2 rounded-full bg-phosphor animate-pulse shadow-[0_0_8px_rgba(0,255,65,0.8)]" />
+                            <h3 className="font-display text-2xl font-bold tracking-wider glow-text uppercase">FOXHUNT</h3>
+                        </div>
+
+                        <p className="font-mono text-sm text-green-muted leading-relaxed mb-8">
+                            FOXHUNT is a technology startup focused on building AI-powered systems, intelligent web platforms, and scalable digital solutions for startups and businesses.
+                        </p>
+
+                        <a
+                            href="https://foxhunt.in"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-4 py-2 border border-phosphor/30 font-mono text-[10px] uppercase tracking-[0.2em] text-phosphor hover:bg-phosphor/10 hover:border-phosphor transition-all duration-300 group/btn"
+                        >
+                            Visit foxhunt.in
+                            <span className="group-hover/btn:translate-x-1 transition-transform">→</span>
+                        </a>
+                    </div>
 
                     {/* Main Title only */}
 
@@ -123,7 +144,7 @@ export default function HeroSection() {
                     </h1>
 
                     {/* Sub-tagline with typewriter effect */}
-                    <p className="font-mono text-base text-green-muted max-w-md leading-relaxed mb-2">
+                    <p className="font-mono text-base text-green-muted max-w-md leading-relaxed mb-8">
                         {subText}
                         {nameDone && (
                             <span className="cursor-blink ml-1 text-phosphor inline-block">█</span>
@@ -132,7 +153,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Right: Stats column */}
-                <div className="lg:col-span-5 flex flex-col gap-8">
+                <div className="lg:col-span-5 flex flex-col gap-8 lg:pt-12">
                     <div className="grid grid-rows-3 gap-0 border border-terminal-border">
                         {/* Stat 1 */}
                         <div className="border-b border-terminal-border p-8 flex flex-col justify-between terminal-panel glow-border-hover group transition-all duration-300">
@@ -160,27 +181,6 @@ export default function HeroSection() {
                         </div>
                     </div>
 
-                    {/* FOXHUNT Company Card (Moved Below Stats) */}
-                    <div className="terminal-panel border border-terminal-border p-8 glow-border-hover group transition-all duration-300 relative overflow-hidden">
-                        <div className="flex items-center gap-3 mb-4">
-                            <span className="w-2 h-2 rounded-full bg-phosphor animate-pulse shadow-[0_0_8px_rgba(0,255,65,0.8)]" />
-                            <h3 className="font-display text-2xl font-bold tracking-wider glow-text uppercase">FOXHUNT</h3>
-                        </div>
-
-                        <p className="font-mono text-sm text-green-muted leading-relaxed mb-8">
-                            FOXHUNT is a technology startup focused on building AI-powered systems, intelligent web platforms, and scalable digital solutions for startups and businesses.
-                        </p>
-
-                        <a
-                            href="https://foxhunt.in"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 px-4 py-2 border border-phosphor/30 font-mono text-[10px] uppercase tracking-[0.2em] text-phosphor hover:bg-phosphor/10 hover:border-phosphor transition-all duration-300 group/btn"
-                        >
-                            Visit foxhunt.in
-                            <span className="group-hover/btn:translate-x-1 transition-transform">→</span>
-                        </a>
-                    </div>
                 </div>
             </div>
 

@@ -17,7 +17,7 @@ const ITEMS = [
 
 export default function MarqueeTicker() {
   return (
-    <div className="border-y border-terminal-border overflow-hidden py-2 bg-terminal-surface/30">
+    <div className="border-y border-terminal-border overflow-hidden py-1 bg-terminal-surface/30">
       <div className="flex overflow-hidden">
         <div className="marquee-content">
           {[...ITEMS, ...ITEMS]?.map((item, i) => (

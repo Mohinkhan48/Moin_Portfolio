@@ -60,7 +60,7 @@ export default function TechStackSection() {
     }, [sectionRef]);
 
     return (
-        <section id="stack" ref={sectionRef} className="relative z-10 py-10 lg:py-14 border-t border-terminal-border bg-terminal-bg opacity-100">
+        <section id="stack" ref={sectionRef} className="relative z-10 py-8 lg:py-10 border-t border-terminal-border bg-terminal-bg opacity-100">
             <div className="max-w-[1400px] mx-auto px-6">
 
                 {/* Header */}

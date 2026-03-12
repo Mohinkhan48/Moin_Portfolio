@@ -30,7 +30,7 @@ export default function ContactSection() {
     }, []);
 
     return (
-        <section id="contact" ref={sectionRef} className="py-10 lg:py-14 border-t border-terminal-border opacity-100">
+        <section id="contact" ref={sectionRef} className="py-8 lg:py-10 border-t border-terminal-border opacity-100">
             <div className="max-w-[1400px] mx-auto px-6">
                 <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
 

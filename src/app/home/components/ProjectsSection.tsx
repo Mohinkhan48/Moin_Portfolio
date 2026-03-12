@@ -68,7 +68,7 @@ export default function ProjectsSection() {
     }, [sectionRef]);
 
     return (
-        <section id="projects" ref={sectionRef} className="relative z-10 py-10 lg:py-14 opacity-100 bg-terminal-bg">
+        <section id="projects" ref={sectionRef} className="relative z-10 py-8 lg:py-10 opacity-100 bg-terminal-bg">
             <div className="max-w-[1400px] mx-auto px-6">
 
                 {/* Section header */}
