@@ -68,11 +68,11 @@ export default function ProjectsSection() {
     }, [sectionRef]);
 
     return (
-        <section id="projects" ref={sectionRef} className="relative z-10 py-28 lg:py-36 opacity-100 bg-terminal-bg">
+        <section id="projects" ref={sectionRef} className="relative z-10 py-10 lg:py-14 opacity-100 bg-terminal-bg">
             <div className="max-w-[1400px] mx-auto px-6">
 
                 {/* Section header */}
-                <div className="grid lg:grid-cols-12 gap-8 mb-16 reveal">
+                <div className="grid lg:grid-cols-12 gap-8 mb-6 reveal">
                     <div className="lg:col-span-5">
                         <span className="font-mono text-xs uppercase tracking-[0.2em] text-green-muted mb-3 block">
                             01 / client projects
@@ -112,7 +112,7 @@ export default function ProjectsSection() {
                 </div>
 
                 {/* Project rows — Template 2 list-view pattern */}
-                <div className="border-t border-terminal-border mt-12">
+                <div className="border-t border-terminal-border mt-4">
                     {PROJECTS.map((proj, idx) => (
                         <div
                             key={proj.id}
@@ -161,7 +161,7 @@ export default function ProjectsSection() {
                 </div>
 
                 {/* View all CTA */}
-                <div className="flex justify-center mt-12 reveal delay-500">
+                <div className="flex justify-center mt-8 reveal delay-500">
                     <a
                         href="https://github.com/"
                         target="_blank"

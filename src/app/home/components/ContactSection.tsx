@@ -30,7 +30,7 @@ export default function ContactSection() {
     }, []);
 
     return (
-        <section id="contact" ref={sectionRef} className="py-28 lg:py-36 border-t border-terminal-border opacity-100">
+        <section id="contact" ref={sectionRef} className="py-10 lg:py-14 border-t border-terminal-border opacity-100">
             <div className="max-w-[1400px] mx-auto px-6">
                 <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
 
@@ -39,11 +39,11 @@ export default function ContactSection() {
                         <span className="font-mono text-xs uppercase tracking-[0.2em] text-green-muted mb-3 block">
                             04 / contact
                         </span>
-                        <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight text-green-primary mb-8">
+                        <h2 className="font-display text-4xl md:text-5xl font-semibold tracking-tight text-green-primary mb-4">
                             Open a{' '}
                             <span className="glow-text-dim italic">session.</span>
                         </h2>
-                        <p className="font-mono text-sm text-green-muted leading-relaxed mb-12 max-w-sm">
+                        <p className="font-mono text-sm text-green-muted leading-relaxed mb-4 max-w-sm">
                             Co-Founder of FOXHUNT and AI & ML Engineer specializing in building real-world software solutions. Experienced in developing and delivering multiple client projects using Python, Django, MySQL, and JavaScript. Passionate about creating scalable web applications, AI-driven systems, and high-performance backend architectures that solve real business problems.
                         </p>
 
@@ -192,6 +192,6 @@ export default function ContactSection() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }

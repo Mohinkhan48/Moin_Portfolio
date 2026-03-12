@@ -56,12 +56,6 @@ function useTypewriter(lines: string[], speed = 45, pauseMs = 1200, loop = false
     return { displayed, activeText, done };
 }
 
-const BOOT_LINES = [
-    '> Initializing DevFolio v2.6.0...',
-    '> Loading developer profile... [OK]',
-    '> Mounting open-source modules... [OK]',
-    '> Starting interactive shell...',
-];
 
 export default function HeroSection() {
     const titleRef = useRef<HTMLHeadingElement>(null);
@@ -71,7 +65,6 @@ export default function HeroSection() {
         setIsMounted(true);
     }, []);
 
-    const { displayed, activeText, done } = useTypewriter(BOOT_LINES, 38, 600);
 
     // Static Name as requested
     const nameText = 'MOHIN KHAN';
@@ -83,11 +76,11 @@ export default function HeroSection() {
     // ^ Starts immediately, 1s pause between loops
 
     if (!isMounted) {
-        return <section className="relative z-10 min-h-screen flex flex-col justify-center px-6 bg-terminal-bg" />;
+        return <section className="relative z-10 h-auto flex flex-col justify-center px-6 bg-terminal-bg" />;
     }
 
     return (
-        <section className="relative z-10 min-h-screen flex flex-col justify-center pt-24 pb-20 lg:pb-28 px-6 overflow-hidden bg-terminal-bg">
+        <section className="relative z-10 h-auto flex flex-col justify-center pt-24 pb-10 lg:pb-12 px-6 overflow-hidden bg-terminal-bg">
             {/* ── Background depth layers ── */}
             {/* Layer 1: animated gradient blob */}
             <div
@@ -114,40 +107,15 @@ export default function HeroSection() {
             <div className="crt-vignette" />
 
             {/* ── Main 12-col grid ── */}
-            <div className="max-w-[1400px] mx-auto w-full grid lg:grid-cols-12 gap-12 items-end">
+            <div className="max-w-[1400px] mx-auto w-full grid lg:grid-cols-12 gap-12 items-start">
 
                 {/* Left: Identity + headline */}
                 <div className="lg:col-span-7">
-                    {/* Terminal boot sequence */}
-                    <div className="terminal-chrome mb-10 max-w-lg">
-                        <div className="terminal-titlebar">
-                            <span className="terminal-dot bg-red-500/60" />
-                            <span className="terminal-dot bg-yellow-500/60" />
-                            <span className="terminal-dot" style={{ background: 'var(--phosphor)', opacity: 0.7 }} />
-                            <span className="font-mono text-xs text-green-muted ml-3">~/devfolio — bash</span>
-                        </div>
-                        <div className="p-5 min-h-[130px] font-mono text-sm leading-relaxed">
-                            {displayed.map((line: string, i: number) => (
-                                <div key={i} className="text-phosphor-dim mb-1">{line}</div>
-                            ))}
-                            {!done && (
-                                <div className="text-phosphor">
-                                    {activeText}
-                                    <span className="cursor-blink text-phosphor">█</span>
-                                </div>
-                            )}
-                            {done && (
-                                <div className="text-phosphor">
-                                    {'> '}<span className="text-green-primary">System ready. Welcome.</span>
-                                </div>
-                            )}
-                        </div>
-                    </div>
 
                     {/* Main Title only */}
 
                     <h1
-                        className="font-display text-6xl md:text-8xl lg:text-9xl font-semibold tracking-tight leading-[1.0] mb-6 min-h-[1.2em]"
+                        className="font-display text-6xl md:text-8xl lg:text-9xl font-semibold tracking-tight leading-[1.0] mb-2"
                     >
                         <span className="glow-text block uppercase">
                             {nameText}
@@ -155,7 +123,7 @@ export default function HeroSection() {
                     </h1>
 
                     {/* Sub-tagline with typewriter effect */}
-                    <p className="font-mono text-base text-green-muted max-w-md leading-relaxed mb-10 min-h-[3em]">
+                    <p className="font-mono text-base text-green-muted max-w-md leading-relaxed mb-2">
                         {subText}
                         {nameDone && (
                             <span className="cursor-blink ml-1 text-phosphor inline-block">█</span>
@@ -164,7 +132,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Right: Stats column */}
-                <div className="lg:col-span-5 flex flex-col gap-8 self-end">
+                <div className="lg:col-span-5 flex flex-col gap-8">
                     <div className="grid grid-rows-3 gap-0 border border-terminal-border">
                         {/* Stat 1 */}
                         <div className="border-b border-terminal-border p-8 flex flex-col justify-between terminal-panel glow-border-hover group transition-all duration-300">
@@ -217,7 +185,7 @@ export default function HeroSection() {
             </div>
 
             {/* ── CTAs ── */}
-            <div className="max-w-[1400px] mx-auto w-full mt-12 flex flex-col sm:flex-row items-start sm:items-center gap-5">
+            <div className="max-w-[1400px] mx-auto w-full mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-5">
                 <Link
                     href="#projects"
                     className="inline-flex items-center gap-3 px-8 py-3.5 bg-phosphor text-terminal-bg font-mono text-xs uppercase tracking-widest font-semibold hover:bg-phosphor-dim transition-all duration-300 group"

@@ -60,11 +60,11 @@ export default function TechStackSection() {
     }, [sectionRef]);
 
     return (
-        <section id="stack" ref={sectionRef} className="relative z-10 py-28 lg:py-36 border-t border-terminal-border bg-terminal-bg opacity-100 min-h-[500px]">
+        <section id="stack" ref={sectionRef} className="relative z-10 py-10 lg:py-14 border-t border-terminal-border bg-terminal-bg opacity-100">
             <div className="max-w-[1400px] mx-auto px-6">
 
                 {/* Header */}
-                <div className="mb-16 reveal">
+                <div className="mb-6 reveal">
                     <span className="font-mono text-xs uppercase tracking-[0.2em] text-green-muted mb-3 block">
                         02 / tech stack
                     </span>

@@ -88,8 +88,8 @@ export default function BlogSection() {
     }, []);
 
     return (
-        <section id="writing" ref={sectionRef} className="py-28 lg:py-36 border-t border-terminal-border opacity-100">
-            <div className="max-w-[1400px] mx-auto px-6 mb-12">
+        <section id="writing" ref={sectionRef} className="py-10 lg:py-14 border-t border-terminal-border opacity-100">
+            <div className="max-w-[1400px] mx-auto px-6 mb-4">
                 <div className="flex items-end justify-between reveal">
                     <div>
                         <span className="font-mono text-xs uppercase tracking-[0.2em] text-green-muted mb-3 block">
